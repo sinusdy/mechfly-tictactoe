@@ -167,8 +167,8 @@ def ai_turn(board_input, c_choice, h_choice):
     if depth == 0 or game_over(board_input):
         return
 
-    print(f'Computer turn [{c_choice}]')
-    render(board_input, c_choice, h_choice)
+    #print(f'Computer turn [{c_choice}]')
+    #render(board_input, c_choice, h_choice)
 
     if depth == 9:
         x = choice([0, 1, 2])
