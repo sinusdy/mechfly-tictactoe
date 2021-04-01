@@ -41,10 +41,10 @@ Code for computer vision to play tic tac toe for Mechfly
 
 # To-Do List
 Prep:
-- [] Convert Kieren's HSV slider code to be compatible with VidGear
-- [] Bind Pi's IP address to router to be `192.168.0.101`
-- [] Backup code to github
-- [] Bind laptop's IP address to router (Optional)
+- [ ] Convert Kieren's HSV slider code to be compatible with VidGear
+- [ ] Bind Pi's IP address to router to be `192.168.0.101`
+- [ ] Backup code to github
+- [ ] Bind laptop's IP address to router (Optional)
 
 D-Day:
-- [] Use the hsv slider code to adjust the values in `netgear_client.py`
+- [ ] Use the hsv slider code to adjust the values in `netgear_client.py`
