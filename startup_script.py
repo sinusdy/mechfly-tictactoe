@@ -1,8 +1,9 @@
 from scapy.all import ARP, Ether, srp
 import os
 import time
+import sys
 
-self_ip = "192.168.0.101" # bound ip address of self
+self_ip = sys.argv[1] # bound ip address of self
 target_ip = "192.168.0.1/24" #"192.168.1.1/24"
 router_ip = "192.168.0.1"
 try:
