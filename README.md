@@ -32,30 +32,38 @@ Code for computer vision to play tic tac toe for Mechfly
 
 # How to run code
 1. Raspberry Pi
-    - Open PuTTY and connect to Host name `raspberrypi.local` or `192.168.0.101` with SSH connection
+    - Open PuTTY and connect to Host name `raspberrypi.local` or IP Address (find by typing `arp -a` in laptop's terminal ) with SSH connection
     - Login with the following details:
         ```
         Username: pi
         Password: mechfly23
         ```
+    - Find Pi's IP address with by typing `ifconfig` in terminal
     - Run the following commands
         ```
         $ cd Desktop
-        $ sudo python3 startup_script.py
+        $ sudo python3 startup_script.py $PI'S_IP_ADDRESS
+        ```
+    - To run server code directly without the looping through network function of `startup_script.py`
+        ```
+        $ sudo python3 netgear_server.py $PC'S_IP_ADDRESS 8080
         ```
 2. PC
     - Open terminal
     - Run `ipconfig` and look for the PC's ip address
-    - Run the following command
+    - Run the following command to run tic tac toe helper
         ```
-        python netgear_client.py $IP_ADDRESS 8080
+        $ python netgear_client.py $PC'S IP_ADDRESS 8080
+        ```
+    - Run the following command to run HSV slider to calibrate HSV values. Note that there are three color options available: `red`, `green`, and `white`
+        ```
+        $ python HSVforRPi.py $PC'S_IP_ADDRESS 8080 $COLOR
         ```
 
 # To-Do List
 Prep:
 - [X] Convert Kieren's HSV slider code to be compatible with VidGear
-- [ ] Bind Pi's IP address to router to be `192.168.0.101`
-- [ ] Backup code to github
+- [X] Backup code to github
 - [ ] Bind laptop's IP address to router (Optional)
 
 D-Day:
