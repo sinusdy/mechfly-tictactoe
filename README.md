@@ -9,14 +9,26 @@ Code for computer vision to play tic tac toe for Mechfly
     $ sudo apt-get install tcpdump
     $ sudo python3 -m pip install vidgear
     ```
-    - Download files `minimax.py`, `netgear_server.py`, and `startup_script.py` to folder Desktop
+    - Download files `netgear_server.py`, and `startup_script.py` to folder Desktop
+    - Or checkout to branch **pi** and pull the files
+    ```
+    $ git clone https://github.com/sinusdy/mechfly-tictactoe.git
+    $ git checkout -b pi
+    $ git pull
+    ```  
 2. PC
     - Install required lilbraries
     ```
     $ sudo pip install vidgear
     $ sudo pip install opencv-python
     ```
-    - Download file `netgear_client.py`
+    - Download file `netgear_client.py`, `minimax.py`, `TicTacToeModified.py`, and `HSVforRPi.py`
+   - Or checkout to branch **pc** and pull the files
+    ```
+    $ git clone https://github.com/sinusdy/mechfly-tictactoe.git
+    $ git checkout -b pc
+    $ git pull
+    ```   
 
 # How to run code
 1. Raspberry Pi
@@ -41,7 +53,7 @@ Code for computer vision to play tic tac toe for Mechfly
 
 # To-Do List
 Prep:
-- [ ] Convert Kieren's HSV slider code to be compatible with VidGear
+- [X] Convert Kieren's HSV slider code to be compatible with VidGear
 - [ ] Bind Pi's IP address to router to be `192.168.0.101`
 - [ ] Backup code to github
 - [ ] Bind laptop's IP address to router (Optional)
